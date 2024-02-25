@@ -4,7 +4,7 @@ Dive into our Python-powered GUI tool. Uncover real-time status updates, select 
 
 ## Summary: Building a Sly Aim Assist Tool with Python and Tkinter
 
-In this comprehensive guide, we explored the intricacies of a Python script designed to create a graphical user interface (GUI) for a Sly Aim Assist tool. The script incorporates threading, Tkinter for GUI development, and YAML file processing to enhance the gaming experience. Here's a breakdown of the key components:
+In this comprehensive guide, we explored the intricacies of a Python script designed to create a graphical user interface (GUI) for a Sly Aim Assist tool. The script incorporates threading, Tkinter for GUI development, and YAML file processing to enhance the gaming experience. Here's a breakdown of the key components: <a href='https://www.slyautomation.com/blog/aim-assist-script-with-arduino-and-python-for-gaming/'>Aim assist Script with Arduino and Python for Gaming</a>
 
 ### Importing Libraries:
 
