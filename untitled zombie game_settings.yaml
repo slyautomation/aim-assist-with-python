@@ -1,0 +1,34 @@
+untitled zombie game:
+  glock:
+    # Set the horizontal limit: 5 means a maximum of 5 pixels to the left or to the right every shot
+    horizontal_range: 2
+    # Set the minimum and maximum amount of pixels to move the mouse every shot
+    min_vertical: 5
+    max_vertical: 6
+    # Set the minimum and maximum amount of time in seconds to wait until moving the mouse again
+    min_firerate: 0.01
+    max_firerate: 0.02
+    bonus_offset: '0'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: 'random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / offset_const'
+  acc_honey_badger:
+    horizontal_range: 0
+    min_vertical: 5
+    max_vertical: 6
+    min_firerate: 0.02
+    max_firerate: 0.03
+    bonus_offset: '0'
+    horizontal_offset: '0'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: 'random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / offset_const'
+  p90:
+    horizontal_range: 1.85
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: '0'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: 'random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / offset_const'

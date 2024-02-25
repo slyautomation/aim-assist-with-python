@@ -1,0 +1,111 @@
+apex:
+  alternator:
+    horizontal_range: 0
+    min_vertical: 4
+    max_vertical: 5
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: '0'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: 'random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / offset_const'
+  spitfire:
+    horizontal_range: 0
+    min_vertical: 4
+    max_vertical: 5
+    min_firerate: 0.06
+    max_firerate: 0.07
+    bonus_offset: '0'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: 'random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / offset_const'
+  rampage:
+    horizontal_range: 0
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.07
+    max_firerate: 0.08
+    bonus_offset: '0'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: 'random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / offset_const'
+  havoc:
+    horizontal_range: 0
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.02
+    max_firerate: 0.03
+    bonus_offset: 'max(0.1, (max(0.1,2.5 + (-0.15 + start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) * bonus_offset / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) * bonus_offset / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  volt:
+    horizontal_range: 0
+    min_vertical: 1
+    max_vertical: 2
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: 'max(0.9, (max(0.9,3 + (-0.1 + start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) * bonus_offset / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) * bonus_offset / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  flatline:
+    horizontal_range: 1
+    min_vertical: 2
+    max_vertical: 3
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: 'max(0.5, (max(0.5,2 + (-0.05 + start - time.time()))))'
+    horizontal_offset: '(horizontal_range * offset_const) * bonus_offset / offset_const'
+    vertical_offset: '(random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) * bonus_offset) / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  r-301:
+    horizontal_range: 1
+    min_vertical: 2
+    max_vertical: 3
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: 'max(0.5, (max(0.5,2 + (-0.05 + start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) * bonus_offset / offset_const'
+    vertical_offset: '(random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) * bonus_offset) / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  tester:
+    horizontal_range: 0
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: 'max(0.5, (max(0.5,3 + (-0.05 + start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) * bonus_offset / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1)  / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  car:
+    horizontal_range: 1
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: 'max(0.8, (max(0.8,1.90 + (-0.03 + start - time.time()))))'
+    horizontal_offset: '(horizontal_range * offset_const) * bonus_offset / offset_const'
+    vertical_offset: '(random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) * bonus_offset) / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  r99:
+    horizontal_range: 1
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: 'max(0.9, (max(0.9,1.95 + (-0.03 + start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) * bonus_offset / offset_const'
+    vertical_offset: '(random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) * bonus_offset) / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  re-45:
+    horizontal_range: 1
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.03
+    max_firerate: 0.04
+    bonus_offset: 'max(1, (max(1,2 + (start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1)  / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'

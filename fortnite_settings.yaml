@@ -1,0 +1,21 @@
+fortnite:
+  assualt rifle:
+    horizontal_range: 0
+    min_vertical: 3
+    max_vertical: 4
+    min_firerate: 0.11
+    max_firerate: 0.12
+    bonus_offset: 'max(0.1, (max(0.1,1 + (start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
+  smg:
+    horizontal_range: 0
+    min_vertical: 4
+    max_vertical: 5
+    min_firerate: 0.02
+    max_firerate: 0.03
+    bonus_offset: 'max(1.7, (max(1.7,1.8 + (start - time.time()))))'
+    horizontal_offset: '(-horizontal_range * offset_const) / offset_const'
+    vertical_offset: 'random.randrange(min_vertical * offset_const, max_vertical * offset_const, 1) / offset_const'
+    time_offset: '(random.randrange(min_firerate * offset_const, max_firerate * offset_const, 1) / bonus_offset) / offset_const'
